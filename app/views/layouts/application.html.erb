@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GKT</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <div class="container">
+    <header>
+      <div class="container">
+        <%= render 'partials/navbar' %>
+      </div>
+    </header>
+  </div>
+
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <h1><%= link_to "GKT", root_path %></h1>
+        </div>
+              <%= render 'partials/notice' %>
+              <div class="col-xs-6 text-right">
+                 <h1 class="cart-text">  <%= render 'layouts/cart_text' %> </h1>
+              </div>
+
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        DX STUDIOS
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
+</head>
+<body>
