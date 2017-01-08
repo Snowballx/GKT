@@ -1,5 +1,31 @@
 source 'https://rubygems.org'
 
+
+# Facebook omniauth
+gem 'omniauth-facebook'
+
+# Usage $brakeman
+
+# rails_best_practices
+gem "rails_best_practices"
+# Usage rails_best_practices -f html .
+
+# Rubocop
+gem 'rubocop', require: false
+# Usage $rubocop
+
+# rubycritic
+gem "rubycritic", :require => false
+# Usage $rubycritic
+
+# Investigates routes definition,to shows unused and unreachable routes
+gem 'traceroute'
+# Usage $rake traceroute
+
+# ERD generator
+gem "rails-erd"
+# Usage $exec erd
+
 # Adds Upload images to Products
 gem 'carrierwave'
 # bootstrap-sass STYLING
