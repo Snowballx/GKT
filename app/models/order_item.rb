@@ -16,6 +16,7 @@ class OrderItem < ApplicationRecord
     end
   end
 
+  #Displays Total price in cart; card; individual item total price.
   def total_price
     unit_price * quantity
   end

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#Stripe payment gateway
+gem 'stripe'
 
 # Facebook omniauth
 gem 'omniauth-facebook'
