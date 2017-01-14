@@ -1,5 +1,19 @@
-<h2>Thanks, you paid
-    <strong>
-      <%= number_to_currency current_order.subtotal %>
-    </strong>!
-</h2>
+<!-- This page shows after payment has been approved -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+
+
+        <h2>
+          Thank you! Your payment of <strong><%= number_to_currency current_order.subtotal %></strong> has been approved by Stripe payment system.
+        </h2>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Please Style CSS -->

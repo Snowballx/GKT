@@ -5,9 +5,17 @@
         <p><%= flash[:error] %></p>
     </div>
     <% end %>
+
     <label class="amount">
-        <span>Amount: $<%= current_order.subtotal %></span>
+
+        <span>
+          <%= current_order.order_items.size %> Products -
+          Total Amount: <%= number_to_currency current_order.subtotal %>
+        </span>
+
     </label>
+
+
 </article>
 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -16,6 +24,6 @@
 </script>
 <% end %>
 
-
-
 <!-- data-description="A month's subscription" -->
+
+<!-- Please style looks ugly af -->
