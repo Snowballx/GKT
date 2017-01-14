@@ -1,4 +1,4 @@
-<% if @order.errors.any? || @order_item.errors.any? %>
+<% if @order.errors.full_messages.any? || @order_item.errors.full_messages.any? %>
 alert("NOT VALID.")
 <% else %>
   $(".cart-text").html("<%= escape_javascript(render 'layouts/cart_text') %>")
