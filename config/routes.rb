@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :products, only: [:index, :new, :create, :show, :edit]
+  resources :products, only: [:index, :new, :create, :show, :edit, :update, :delete] do
+    resources :comments, only: [:create]
+  end
+  
+  delete 'product' => 'products#destroy'
+
   resources :charges
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]

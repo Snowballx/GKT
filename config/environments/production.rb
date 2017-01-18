@@ -52,6 +52,15 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
+
+  #To configure your Mailgun credentials place the following code in the corresponding environment file.
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+          api_key: '<mailgun api key>',
+          domain: '<mailgun domain>'
+  }
+
+
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "GKT_#{Rails.env}"

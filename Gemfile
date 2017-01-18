@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+
+# Record tag helper allows user to comment
+gem 'record_tag_helper', '~> 1.0'
+
+# Mailgun_rails
+gem 'mailgun_rails'
+
 #Stripe payment gateway
 gem 'stripe'
 

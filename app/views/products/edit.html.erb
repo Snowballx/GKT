@@ -3,4 +3,10 @@
 <%= render 'form', product: @product %>
 
 <%= link_to 'Show', @product %> |
+<%= link_to 'Delete', @product, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', products_path %>
+
+
+
+
+<!-- Unable to add delete method, suspect is either controller or routing error"
