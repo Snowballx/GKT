@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dupdtre3b
+  api_key: '312975286533542'
+  api_secret: ihrBXjlMFyZSC5NFNq8hLd20I9Y
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dupdtre3b
+  api_key: '312975286533542'
+  api_secret: ihrBXjlMFyZSC5NFNq8hLd20I9Y
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dupdtre3b
+  api_key: '312975286533542'
+  api_secret: ihrBXjlMFyZSC5NFNq8hLd20I9Y
+  enhance_image_tag: true
+  static_image_support: false

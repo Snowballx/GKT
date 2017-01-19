@@ -1,6 +1,15 @@
 source 'https://rubygems.org'
 
 
+# Simpler form f.field
+gem 'simple_form'
+
+# Image uploader
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+
+# cloudinary image hosting cloud
+gem 'cloudinary'
+
 # Record tag helper allows user to comment
 gem 'record_tag_helper', '~> 1.0'
 
@@ -31,12 +40,9 @@ gem "rubycritic", :require => false
 gem 'traceroute'
 # Usage $rake traceroute
 
-# ERD generator
+# ERD generator, usage $exec erd
 gem "rails-erd"
-# Usage $exec erd
 
-# Adds Upload images to Products
-gem 'carrierwave'
 # bootstrap-sass STYLING
 gem 'bootstrap-sass', '~> 3.3.6'
 # Devise Gem for login registrations

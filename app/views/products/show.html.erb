@@ -16,10 +16,21 @@
       </p>
 
       <p>
-        <strong>Image:</strong>
+        <strong>Picture:</strong>
         <%= image_tag(@product.picture_url, width: 600) if @product.picture.present? %>
       </p>
   </div>
+
+
+<!-- .image-container { .image
+      }  SCSS -->
+  <div class="image-container">
+  <p id=""> <%= image_tag((@product.picture_url), :class => 'image') %></p>
+  </div>
+<!-- .image-container { .image
+      }  SCSS -->
+
+
 
 </div>
   <p>  <%= link_to 'Edit', edit_product_path(@product) %> |
